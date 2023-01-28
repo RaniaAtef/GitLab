@@ -8,6 +8,7 @@ const server = http.createServer((req, res) => {
   res.setHeader("Content-Type", "text/plain");
   res.end("Hello World");
   console.log("rewan");
+  console.log(res.statusCode);
 });
 
 server.listen(port, hostname, () => {
